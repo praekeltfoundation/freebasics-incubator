@@ -1625,6 +1625,37 @@ header.scrolink{
 		margin: 0 0 2em 0;
 	}
 
+/* START NEW CSS */
+  p.banner_paragraph {
+    padding: 0 40px;
+  }
+  @media screen and (max-width: 980px){
+    p.banner_paragraph {
+      padding: 0 35px;
+      /*color: red;*/
+    }
+  }
+  @media screen and (max-width: 840px) {
+    p.banner_paragraph {
+      padding: 0 15px;
+      /*color: yellow;*/
+    }
+  }
+  @media screen and (max-width: 736px){
+    p.banner_paragraph {
+      padding: 0;
+      /*color: blue;*/
+    }
+  }
+
+  footer.pre-screening__button {
+	  margin: 50px auto -10px;
+    position: relative;
+    z-index: 10;
+  }
+
+/* END NEW CSS */
+
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Basis Grotesque Pro", Tahoma, Arial, Helvetica, sans-serif;
 		color: inherit;
@@ -2587,10 +2618,6 @@ header.scrolink{
 					text-decoration: none;
 				}
 
-			#banner .inner footer {
-				margin: 50px auto -10px;
-			}
-
 /* Main */
 
 	#logo {
@@ -3223,7 +3250,7 @@ header.scrolink{
 			input[type="submit"],
 			input[type="reset"],
 			.button {
-				max-width: 20em;
+				/*max-width: 20em;*/
 				width: 100%;
 			}
 
@@ -3284,8 +3311,11 @@ header.scrolink{
 				#banner .inner {
 					background: none;
 					display: block;
-					padding: 0 1.5em;
+					padding: 0 0.5em;
 				}
+          #banner .inner header {
+            padding: 3px 1em;
+          }
 
 					#banner .inner header h2 {
 						font-size: 1.5em;
