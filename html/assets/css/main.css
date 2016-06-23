@@ -1632,19 +1632,16 @@ header.scrolink{
   @media screen and (max-width: 980px){
     p.banner_paragraph {
       padding: 0 35px;
-      /*color: red;*/
     }
   }
   @media screen and (max-width: 840px) {
     p.banner_paragraph {
       padding: 0 15px;
-      /*color: yellow;*/
     }
   }
   @media screen and (max-width: 736px){
     p.banner_paragraph {
       padding: 0;
-      /*color: blue;*/
     }
   }
 
@@ -3323,10 +3320,6 @@ header.scrolink{
 					#banner .inner p {
 						text-align: center;
 					}
-
-					/*#banner .inner br {
-						display: none;
-					}*/
 
 		/* Main */
 
