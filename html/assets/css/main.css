@@ -2012,9 +2012,11 @@ header.scrolink{
     .icon > .label  {
       display: none;
     }
-
+    
+      /*WHERE IS THIS LOGO USED*/
     .footer-fb {
-      /*background-image: url("../images/fb_logo.png");*/
+      background-image: url("../images/fb_logo.png");
+      /*background-image: url("../images/logos/Logo1-white.svg");*/
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100px;
@@ -2023,7 +2025,8 @@ header.scrolink{
       opacity: 1.0;
     }
     .footer-praek {
-      /*background-image: url("../images/praek_logo.png");*/
+      background-image: url("../images/praek_logo.png");
+      /*background-image: url("../images/logos/Logo1-white.svg");*/
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100px;
@@ -2032,8 +2035,7 @@ header.scrolink{
       opacity: 1.0;
     }
     .footer-icub {
-      /*background-image: url("../images/praekelt-fbn_logo.svg");*/
-      background-image: url("../images/incubator_dot_org_logo_white.png");
+      background-image: url("../images/logos/Logo1-white.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -2619,8 +2621,7 @@ header.scrolink{
 /* Main */
 
   #logo {
-    /*background-image: url("../images/praekelt-fbn_logo.svg");*/
-    background-image: url("../images/incubator_dot_org_logo_white.png");
+    background-image: url("../images/logos/Logo2-white.svg");
     background-repeat: no-repeat;
     height: 65px;
     margin-top: -7px;
@@ -2629,15 +2630,53 @@ header.scrolink{
     background-size: contain;
   }
   #phonelogo {
-    /*background-image: url("../images/praekelt-fbn_logo.svg");*/
-    background-image: url("../images/incubator_dot_org_logo_white.png");
+    background-image: url("../images/logos/Logo2-white.svg");
     background-repeat: no-repeat;
-    height: 65px;
-    margin-top: 8px;
+    background-position: center;
+    background-size: contain; 
+    height: 100%;
     margin-left: 10px;
-    width: auto;
-    background-size: contain;
+    width: 40%;
+   
+    
   }
+
+  @media screen and (min-width: 320px) {
+     #phonelogo {
+        width: 40%;
+     }
+  }
+
+  @media screen and (min-width: 414px) {
+     #phonelogo {
+         width: 35%;
+     }
+  }
+
+  @media screen and (min-width: 480px) {
+     #phonelogo {
+         width: 30%;
+     }
+  }
+  @media screen and (min-width: 560px) {
+     #phonelogo {
+         width: 27%;
+     }
+  }
+
+  @media screen and (min-width: 660px) {
+     #phonelogo {
+         width: 23%;
+     }
+  }
+
+   @media screen and (min-width: 780px) {
+     #phonelogo {
+         width: 20%;
+     }
+  }
+
+
 
   #main {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDA5LjEgNTcwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MDkuMSA1NzAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxkZWZzPjxwYXRoIGlkPSJTVkdJRF8yXyIgZD0iTTI4NS44LDExOS40Yy0xMC45LTQuMS0yMS43LTguMS0zMi42LTEwLjljLTIuNywwLTQuMS0yLjctMi43LTUuNEwyOTMuOSwwSDI2MEw3Ni44LDQzMS42Yy0xNC45LTE2LjMtMjUuOC0zMy45LTMzLjktNTQuM2MtMTcuNi00My40LTE2LjMtOTIuMywyLjctMTM1LjdjMTYuMy0zOCw0NC44LTY5LjIsODAuMS04Ni45bDE3LjYtNDIuMUM4OSwxMzAuMyw0MS41LDE3MSwxNywyMjkuNGMtMzUuMyw4MS40LTEzLjYsMTczLjcsNDQuOCwyMzIuMWMxLjQsMS40LDEuNCw0LjEsMCw1LjRMMTguNCw1NzBoMzMuOWwxODMuMi00MzIuOWMxMi4yLDIuNywyNC40LDYuOCwzNi42LDEwLjljNDIuMSwxOSw3NC42LDUyLjksOTIuMyw5Ny43YzE3LjYsNDMuNCwxNi4zLDkyLjMtMi43LDEzNS43Yy0yNy4xLDY1LjEtODkuNiwxMDcuMi0xNTguOCwxMDcuMmMtMTQuOSwwLTI5LjktMi43LTQ0LjgtNi44TDE0Niw1MTEuNmMxOSw1LjQsMzgsOC4xLDU3LDguMWM3OC43LDAsMTU0LjctNDcuNSwxODguNi0xMjYuMkM0MzcuOCwyODkuMSwzODguOSwxNjUuNiwyODUuOCwxMTkuNHoiLz48L2RlZnM+PHVzZSB4bGluazpocmVmPSIjU1ZHSURfMl8iICBvdmVyZmxvdz0idmlzaWJsZSIgb3BhY2l0eT0iNS4wMDAwMDBlLTAyIi8+PGNsaXBQYXRoIGlkPSJTVkdJRF8xXyI+PHVzZSB4bGluazpocmVmPSIjU1ZHSURfMl8iICBvdmVyZmxvdz0idmlzaWJsZSIgb3BhY2l0eT0iNS4wMDAwMDBlLTAyIi8+PC9jbGlwUGF0aD48L3N2Zz4=);
